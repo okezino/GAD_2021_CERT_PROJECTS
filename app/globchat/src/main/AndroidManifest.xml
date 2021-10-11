@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GAD2021PROJECTS">
         <activity
+            android:name=".SecActivity"
+            android:exported="true" />
+        <activity
             android:name=".GlobMainActivity"
             android:exported="true">
             <intent-filter>

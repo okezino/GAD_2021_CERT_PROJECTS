@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auto_reply">Auto_Reply</string>
+    <string name="auto_summary">Automatic reply of a message</string>
+    <string-array name="entries_auto_reply_time">
+        <item>15 min </item>
+        <item>25 min </item>
+        <item>35 min </item>
+        <item>45 min </item>
+        <item>55 min </item>
+        <item>60 min </item>
+    </string-array>
+    <string-array name="entries_auto_reply_value">
+        <item>15</item>
+        <item>25</item>
+        <item>35</item>
+        <item>45</item>
+        <item>55</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="pref_auto_reply_message">
+        <item>Available</item>
+        <item>Dont disturb</item>
+        <item>not a good time</item>
+        <item>i am working</item>
+        <item>i will be back</item>
+        <item>i will get back shortly</item>
+    </string-array>
+
+    <string-array name="pref_profile_info">
+        <item>Status</item>
+        <item>Date</item>
+        <item>Last seen</item>
+        <item>Read receipt</item>
+        <item>Profile picture</item>
+    </string-array>
+    <string-array name="pref_profile_info_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="General"
+        app:iconSpaceReserved="false"
+        >
+
+        <EditTextPreference
+            android:key="key_status"
+            android:title="status"
+            android:defaultValue="Sleeping"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true"
+            android:dialogTitle="Update Status"/>
+
+        <SwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="key_auto_reply"
+            android:title="@string/auto_reply"
+            android:summary="@string/auto_summary"
+            />
+
+        <ListPreference
+            app:iconSpaceReserved="false"
+            android:dependency="key_auto_reply"
+            android:dialogTitle="Select time"
+            android:key="key_auto_reply_time"
+            android:title="auto reply time"
+            app:useSimpleSummaryProvider="true"
+            android:entries="@array/entries_auto_reply_time"
+            android:entryValues="@array/entries_auto_reply_value"
+            />
+        <ListPreference
+            app:iconSpaceReserved="false"
+            android:dependency="key_auto_reply"
+            android:dialogTitle="Select time"
+            android:key="key_auto_reply_message"
+            android:title="auto reply message"
+            app:useSimpleSummaryProvider="true"
+            android:entries="@array/pref_auto_reply_message"
+            android:entryValues="@array/pref_auto_reply_message"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="App"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:key="key_account_settings"
+            android:title="Account Settings"
+            android:summary="Privacy, Security"
+            app:iconSpaceReserved="false"
+            />
+        <CheckBoxPreference
+            android:title="Auto Download"
+            android:key="key_auto_download"
+            android:defaultValue="true"
+            android:summary="Automatic Download when connected to wifi"
+            app:iconSpaceReserved="false"/>
+        <SwitchPreferenceCompat
+            android:title="New Message Notification"
+            app:iconSpaceReserved="false"
+            android:key="key_new_message_info"
+            android:defaultValue="true"/>
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="About"
+        app:iconSpaceReserved="false"
+        >
+        <Preference
+            app:fragment="com.example.globchat.AccountSettingsFragment"
+            android:title="Version"
+            android:summary="3.5.0"
+            app:iconSpaceReserved="false"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.fb.com"/>
+        </Preference>
+
+        <Preference
+            android:title="Privacy Policy"
+            app:iconSpaceReserved="false">
+
+            <intent
+                android:targetPackage="com.example.globchat"
+                android:targetClass="com.example.globchat.SecActivity"
+                />
+
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
