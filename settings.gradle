@@ -10,3 +10,4 @@ rootProject.name = "GAD2021PROJECTS"
 include ':app'
 include ':app:globchat'
 include ':app:pagingcountries'
+include ':app:noted_room'
