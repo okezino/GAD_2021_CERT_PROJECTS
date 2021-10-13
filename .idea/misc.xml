@@ -12,6 +12,8 @@
         <entry key="app/globchat/src/main/res/menu/topmenu.xml" value="0.30564102564102563" />
         <entry key="app/globchat/src/main/res/xml/account_settings.xml" value="0.190625" />
         <entry key="app/globchat/src/main/res/xml/settings.xml" value="0.335" />
+        <entry key="app/pagingcountries/src/main/res/layout/activity_main.xml" value="0.19202898550724637" />
+        <entry key="app/pagingcountries/src/main/res/layout/item_list.xml" value="0.19202898550724637" />
       </map>
     </option>
   </component>
