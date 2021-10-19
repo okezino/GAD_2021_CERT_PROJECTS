@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app/globchat" />
             <option value="$PROJECT_DIR$/app/noted_room" />
             <option value="$PROJECT_DIR$/app/pagingcountries" />
+            <option value="$PROJECT_DIR$/app/work_manager" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
